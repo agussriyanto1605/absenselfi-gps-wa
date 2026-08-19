@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Presensi & Jurnal Kinerja Guru SMK CANDA BHIRAWA PARE Premium Pro V2</title>
+    <title>E-Presensi & Jurnal Kinerja Guru SMK </title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter & Plus Jakarta Sans -->
@@ -106,7 +106,7 @@
                 </div>
                 <div>
                     <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">E-Presensi & Jurnal Guru</h1>
-                    <p class="text-xs text-indigo-600 font-bold uppercase tracking-wider mt-1">SMK CANDA BHIRAWA PARE</p>
+                    <p class="text-xs text-indigo-600 font-bold uppercase tracking-wider mt-1">SMK </p>
                 </div>
             </div>
 
@@ -4198,7 +4198,7 @@ function applyDateFilters() {
             </tr>`).join('');
             return `<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Rekap Kehadiran Guru</title><style>
                 @page{size:A4 landscape;margin:12mm} body{font-family:Arial,sans-serif;color:#111827;font-size:10px} h1{margin:0;font-size:20px} h2{font-size:13px;margin:18px 0 6px}.meta{margin:5px 0 12px;color:#475569}.cards{display:flex;gap:8px;margin:10px 0 15px}.card{border:1px solid #cbd5e1;border-radius:6px;padding:8px 12px;min-width:110px}.card b{display:block;font-size:17px;margin-top:3px}table{width:100%;border-collapse:collapse;margin-bottom:16px}th,td{border:1px solid #cbd5e1;padding:5px 6px;vertical-align:top}th{background:#f1f5f9;text-transform:uppercase;font-size:8px}.footer{margin-top:12px;color:#64748b;font-size:8px;text-align:right}small{color:#64748b}</style></head><body>
-                <h1>REKAP KEHADIRAN GURU</h1><div class="meta">SMK CANDA BHIRAWA PARE<br>Periode: <strong>${escapeHtml(adminReportPeriodLabel || '-')}</strong><br>Dicetak: ${escapeHtml(new Date().toLocaleString('id-ID'))}</div>
+                <h1>REKAP KEHADIRAN GURU</h1><div class="meta">SMK <br>Periode: <strong>${escapeHtml(adminReportPeriodLabel || '-')}</strong><br>Dicetak: ${escapeHtml(new Date().toLocaleString('id-ID'))}</div>
                 <div class="cards"><div class="card">Total Guru<b>${summaryRows.length}</b></div><div class="card">Guru Hadir<b>${guruHadir}</b></div><div class="card">Total Rekaman<b>${detailRows.length}</b></div><div class="card">Hari Lengkap<b>${totalLengkap}</b></div><div class="card">Belum Lengkap<b>${totalBelum}</b></div></div>
                 <h2>Ringkasan per Guru</h2><table><thead><tr><th>No</th><th>Guru / NIP</th><th>Hari Hadir</th><th>Izin</th><th>Sakit</th><th>Tugas</th><th>Masuk</th><th>Pulang</th><th>Lengkap</th><th>Belum</th><th>%</th><th>Status</th></tr></thead><tbody>${summaryHTML || '<tr><td colspan="12">Tidak ada data</td></tr>'}</tbody></table>
                 <h2>Detail Rekaman</h2><table><thead><tr><th>No</th><th>Tanggal</th><th>Guru / NIP</th><th>Tipe</th><th>Jam</th><th>Lokasi</th><th>Jarak</th><th>Keterangan</th></tr></thead><tbody>${detailHTML || '<tr><td colspan="8">Tidak ada data</td></tr>'}</tbody></table>
@@ -4240,7 +4240,7 @@ function applyDateFilters() {
 
             doc.setFont('helvetica', 'bold'); doc.setFontSize(16); doc.text('REKAP KEHADIRAN GURU', 14, 15);
             doc.setFont('helvetica', 'normal'); doc.setFontSize(9);
-            doc.text('SMK CANDA BHIRAWA PARE', 14, 21);
+            doc.text('SMK ', 14, 21);
             doc.text(`Periode: ${adminReportPeriodLabel || '-'}`, 14, 26);
             doc.text(`Dibuat: ${generatedAt}`, 14, 31);
             doc.setFont('helvetica', 'bold');
